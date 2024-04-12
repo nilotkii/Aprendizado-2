@@ -9,6 +9,9 @@ body{
     min-width: 320px;
     border-bottom: solid black 2px;
     padding-right: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #burguer{
@@ -76,4 +79,7 @@ footer{
     max-height: 100px;
     color: black;
     border-top: solid black 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
