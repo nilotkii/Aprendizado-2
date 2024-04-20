@@ -12,27 +12,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <header class="head row">
-        <h1 class="titulo container-sm col-10">OUT OF CONTROL</h1>
-        <img id="burguer" class="material-symbols-outlined col-2" onclick="clickBurguer()" src="/img/menu-icon.png">
+    <header class="main-header navbar fixed-top">
+        <div class="container-fluid">
+            <a class="titulo-header navbar-brand" href="#">OUT OF CONTROL</a>
+            <div class="">
+                <button id="hamburger" class="menu-ui">
+                    <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <path stroke-width="2" d="M4 8 L26 8"></path>
+                        <path stroke-width="2" d="M4 15 L26 15"></path>
+                        <path stroke-width="2" d="M4 22 L26 22"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </header>
     <!-- DEIXAR O MENU DO TAMANHO DA TELA (MENOS HEADER E FOOTER) -->
     <!-- O MENU DEVE SOBREPOR O CONTEUDO NÃO DEVE EMPURRAR O CONTEUDO -->
-    <menu id="itens" class="text-end">
-        <li class="display-6"><a class="menus" href="home.html">Out of Control</a></li>
-        <li class="display-6"><a class="menus" href="#">About</a></li>
-        <li class="display-6"><a class="menus" href="galery.html">Galery</a></li>
-        <li class="display-6"><a class="menus" href="more.html">More</a></li>
-    </menu>
+    <div id="menu-view" class="menu container-fluid text-center">
+        <menu class="menu-itens">
+            <a class="menu-item row" href="pages/about.html">ABOUT</a>
+            <a class="menu-item row" href="pages/galery.html">GALERY</a>
+            <a class="menu-item row" href="pages/more.html">MORE</a>
+        </menu>
+    </div>
     <!-- IMPORTEM TER UMA DIV FIXA PARA REBER O CONTEUDO "IFRAME" -->
     <!-- ESSA DIV DEVE PREENCHER A TELA TODA (MENOS HEADER E FOOTER) -->
-    <iframe id="conteudo" src="opcao.html" class="container">
+    <iframe id="conteudo" src="pages/home.html" class="container">
         <!-- AQUI VAI O CONTEUDO -->
     </iframe>
     <footer>BABYLON ORACLE</footer>
 </body>
-<script src="/script.js"></script>
+<script src="assets/js/main.js"></script>
 </html>

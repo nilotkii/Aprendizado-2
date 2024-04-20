@@ -1,0 +1,15 @@
+* {
+    cursor: url('../img/cursor_invertido.png'), auto !important;
+}
+
+body {
+    background-color: #ff1800;
+}
+
+img {
+    display: block;
+    margin-top: calc(50vh - 80px);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

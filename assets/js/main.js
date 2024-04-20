@@ -1,15 +1,15 @@
 // FUNÇÃO PARA ABRIR E FECHAR O MENU
-////function clickBurguer() {
-//    if (iframe.src == 'opcao.html') {
-//        iframe.src = 'home.html'
-//    } else {
-//        iframe.src = 'opcao.html'
-//    }
-//} 
+let menu = document.getElementById("menu-view");
+let hamburger = document.getElementById("hamburger");
+let menuClasses = menu.classList;
+let hamburgerClasses = hamburger.classList;
 
-function clickBurguer(){
-    iframe = document.getElementById('conteudo');
-    iframe.src = 'opcao.html';
+hamburger.addEventListener("click", toggleMenu);
+
+function toggleMenu(e) {
+    e.preventDefault();
+    hamburgerClasses.toggle("is-open");
+    menuClasses.toggle("is-open");
 }
 
 //FUNÇÃO PARA MUDAR O SRC DO IFRAME PARA O ABOUT
