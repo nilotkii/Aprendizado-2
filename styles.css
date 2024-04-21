@@ -68,6 +68,48 @@ body{
     padding: 10px;
 }
 
+#conteudo{
+    max-width: 800px;
+    min-height: 92vh;
+    padding-top: 80px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.lucky{
+    max-width: 300px;
+    margin: auto;
+    min-width: 100px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#botao{
+    max-width: 250px;
+    max-height: 250px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.menus{
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    min-height: 100vh;
+}
+
+.abas{
+    font-size: 14vw;
+}
+
 footer{
     font-family: "IM Fell English", serif;
     font-weight: 400;

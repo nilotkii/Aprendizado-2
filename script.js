@@ -1,13 +1,18 @@
 // FUNÇÃO PARA ABRIR E FECHAR O MENU
-function clickMenu() {
-    if (itens.style.display == 'flex') {
-        itens.style.display = 'none'
-    } else {
-        itens.style.display = 'flex'
-    }
+////function clickBurguer() {
+//    if (iframe.src == 'opcao.html') {
+//        iframe.src = 'home.html'
+//    } else {
+//        iframe.src = 'opcao.html'
+//    }
+//} 
+
+function clickBurguer(){
+    iframe = document.getElementById('conteudo');
+    iframe.src = 'opcao.html';
 }
 
-// FUNÇÃO PARA MUDAR O SRC DO IFRAME PARA O ABOUT
+//FUNÇÃO PARA MUDAR O SRC DO IFRAME PARA O ABOUT
 function clickAbout() {
     iframe = document.getElementById('conteudo');
     iframe.src = 'about.html';
